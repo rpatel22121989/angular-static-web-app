@@ -1,0 +1,111 @@
+/**
+ * @license
+ * MyFonts Webfont Build ID 3610529, 2018-07-16T13:17:31-0400
+ *
+ * The fonts listed in this notice are subject to the End User License
+ * Agreement(s) entered into by the website owner. All other parties are
+ * explicitly restricted from using the Licensed Webfonts(s).
+ *
+ * You may obtain a valid license at the URLs below.
+ *
+ * Webfont: FF Mark Web Pro Regular by FontFont
+ * URL: https://www.myfonts.com/fonts/fontfont/mark/pro-regular/
+ * Copyright: 2016 published by Monotype GmbH
+ *
+ * Webfont: FF Mark Web Pro Bold by FontFont
+ * URL: https://www.myfonts.com/fonts/fontfont/mark/pro-bold/
+ * Copyright: 2013 published by FontShop International GmbH
+ *
+ *
+ * License: https://www.myfonts.com/viewlicense?type=web&buildid=3610529
+ * Licensed pageviews: 50,000
+ *
+ * © 2018 MyFonts Inc
+*/
+
+/* @import must be at top of file, otherwise CSS will not work
+ * @import url('http://hello.myfonts.net/count/3717a1');
+ * Causes less-loader to fail
+*/
+
+$FontPathOutfit : '~/assets/fonts/outfit';
+
+@font-face {
+  font-family: 'Outfit';
+  src: url('#{$FontPathOutfit}/Outfit-Thin.woff') format("woff");
+  src: url('#{$FontPathOutfit}/Outfit-Thin.woff2') format("woff2");
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Outfit';
+  src: url('#{$FontPathOutfit}/Outfit-ExtraLight.woff') format("woff");
+  src: url('#{$FontPathOutfit}/Outfit-ExtraLight.woff2') format("woff2");
+  font-weight: 200;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Outfit';
+  src: url('#{$FontPathOutfit}/Outfit-Light.woff') format("woff");
+  src: url('#{$FontPathOutfit}/Outfit-Light.woff2') format("woff2");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Outfit';
+  src: url('#{$FontPathOutfit}/Outfit-Regular.woff') format("woff");
+  src: url('#{$FontPathOutfit}/Outfit-Regular.woff2') format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Outfit';
+  src: url('#{$FontPathOutfit}/Outfit-Medium.woff') format("woff");
+  src: url('#{$FontPathOutfit}/Outfit-Medium.woff2') format("woff2");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Outfit';
+  src: url('#{$FontPathOutfit}/Outfit-SemiBold.woff') format("woff");
+  src: url('#{$FontPathOutfit}/Outfit-SemiBold.woff2') format("woff2");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Outfit';
+  src: url('#{$FontPathOutfit}/Outfit-Bold.woff') format("woff");
+  src: url('#{$FontPathOutfit}/Outfit-Bold.woff2') format("woff2");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Outfit';
+  src: url('#{$FontPathOutfit}/Outfit-ExtraBold.woff') format("woff");
+  src: url('#{$FontPathOutfit}/Outfit-ExtraBold.woff2') format("woff2");
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Outfit';
+  src: url('#{$FontPathOutfit}/Outfit-Black.woff') format("woff");
+  src: url('#{$FontPathOutfit}/Outfit-Black.woff2') format("woff2");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
