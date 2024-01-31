@@ -1,0 +1,102 @@
+<div class="form-container-wrapper">
+    <div class="form-container">
+        <div class="form-content">
+            <form [formGroup]="formGroup" (ngSubmit)="submitEmployeeDetails();" autocomplete="off">
+                <div class="form-contents">
+                    <div class="form-control-container registration-label-wrapper">
+                        <span class="registration-label">Employee Registration.</span>
+                    </div>
+                    <!-- <div class="form-control-container control-label-wrapper">
+                        <span class="control-label">First Name</span>
+                    </div> -->
+                    <div class="form-control-container margin-bottom-15px">
+                        <zuru-textbox-input id="firstName" [options]="firstNameInputOptions"
+                            [validationOptions]="firstNameInputValidationOptions" formControlName="firstName">
+                        </zuru-textbox-input>
+                    </div>
+                    <!-- <div class="form-control-container control-label-wrapper">
+                        <span class="control-label">Last Name</span>
+                    </div> -->
+                    <div class="form-control-container margin-bottom-15px">
+                        <zuru-textbox-input id="lastName" [options]="lastNameInputOptions"
+                            [validationOptions]="lastNameInputValidationOptions" formControlName="lastName">
+                        </zuru-textbox-input>
+                    </div>
+                    <!-- <div class="form-control-container control-label-wrapper">
+                        <span class="control-label">Email Address</span>
+                    </div> -->
+                    <div class="form-control-container margin-bottom-15px">
+                        <!-- email-input-wrapper -->
+                        <zuru-email-textbox-input id="emailAddress" [options]="emailInputOptions"
+                            [validationOptions]="emailInputValidationOptions" formControlName="emailAddress">
+                        </zuru-email-textbox-input>
+                    </div>
+                    <!-- <div class="form-control-container control-label-wrapper">
+                        <span class="control-label">Mobile Number</span>
+                    </div> -->
+                    <div class="form-control-container margin-bottom-15px">
+                        <zuru-phone-number-textbox-input id="phoneNumber" [options]="phoneNumberInputOptions"
+                            [validationOptions]="phoneNumberInputValidationOptions" formControlName="phoneNumber">
+                        </zuru-phone-number-textbox-input>
+                    </div>
+                    <!-- <div class="form-control-container control-label-wrapper">
+                        <span class="control-label">Post Code</span>
+                    </div> -->
+                    <div class="form-control-container margin-bottom-15px">
+                        <zuru-textbox-input id="postCode" [options]="postCodeInputOptions"
+                            [validationOptions]="postCodeInputValidationOptions" formControlName="postCode">
+                        </zuru-textbox-input>
+                    </div>
+                    <!-- <div class="form-control-container control-label-wrapper">
+                        <span class="control-label">Salary</span>
+                    </div> -->
+                    <div class="form-control-container margin-bottom-15px">
+                        <zuru-number-textbox-input id="salary" [options]="salaryInputOptions"
+                            [validationOptions]="salaryInputValidationOptions" formControlName="salary">
+                        </zuru-number-textbox-input>
+                    </div>
+                    <div class="form-control-container margin-bottom-15px">
+                        <span class="control-label">Gender</span>
+                    </div>
+                    <div class="form-control-container margin-bottom-15px">
+                        <zuru-radiobutton-list id="gender-list" [options]="genderRadiobuttonListOptions"
+                            formControlName="gender"></zuru-radiobutton-list>
+                    </div>
+                    <div class="form-control-container margin-bottom-15px">
+                        <span class="control-label">Date of Birth</span>
+                    </div>
+                    <div class="form-control-container margin-bottom-15px">
+                        <zuru-date-picker id="dob" [options]="dobDatePickerOptions"
+                            formControlName="dob"></zuru-date-picker>
+                    </div>
+                    <div class="form-control-container margin-bottom-15px">
+                        <!-- remember-me-checkbox-wrapper -->
+                        <zuru-checkbox id="termsConditions" [options]="termsConditionsCheckboxOptions"
+                            formControlName="termsConditions">
+                        </zuru-checkbox>
+                    </div>
+                    <div class="form-control-container margin-bottom-15px">
+                        <span class="control-label">Position</span>
+                    </div>
+                    <div class="form-control-container margin-bottom-15px">
+                        <zuru-dropdown-list id="position-list" [options]="positionDropdownListOptions"
+                            formControlName="position"></zuru-dropdown-list>
+                    </div>
+                    <div class="form-control-container margin-bottom-15px">
+                        <span class="control-label">Tech. Skills</span>
+                    </div>
+                    <div class="form-control-container margin-bottom-15px">
+                        <zuru-checkbox-list id="skill-list" [options]="skillsCheckboxListOptions"
+                            formControlName="skills"></zuru-checkbox-list>
+                    </div>
+                    <div class="form-control-container">
+                        <button type="submit" class="btn-registration" tabindex="0">Submit</button>
+                    </div>
+                    <div class="form-control-container margin-bottom-20px" *ngIf="validationMessage">
+                        <span class="error-message">{{ validationMessage }}</span>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
